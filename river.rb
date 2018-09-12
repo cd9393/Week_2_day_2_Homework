@@ -12,4 +12,8 @@ class River
   def add_fish(fish)
     @fish.push(fish)
   end
+
+  def remove_fish
+    @fish.pop()
+  end
 end

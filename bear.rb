@@ -14,7 +14,6 @@ def food_count
 end
 
 def take_food_from_river(river)
-  @stomach.push(river.fish[0])
-  river.fish.delete_at(0)
+  @stomach.push(river.remove_fish)
 end
 end
