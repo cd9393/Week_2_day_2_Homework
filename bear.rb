@@ -14,6 +14,10 @@ def food_count
 end
 
 def take_food_from_river(river)
-  @stomach.push(river.remove_fish)
+  fish = river.remove_fish # as the fish could be nil (river is empty) we will need to check if the fish is a nil value.
+  if fish != nil
+  @stomach.push(fish)
+end 
 end
+
 end

@@ -26,5 +26,6 @@ class RiverTest < Minitest::Test
     @river.add_fish(@fish1)
     @river.remove_fish
     assert_equal(0, @river.fish_count)
+    # additonal check would be to check that a Fish class is returned or check the name of the returned fish is equal to "Tuna"
   end
 end
